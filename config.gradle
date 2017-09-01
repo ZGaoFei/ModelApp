@@ -1,0 +1,30 @@
+ext {
+
+    android = [
+            compileSdkVersion: 25,
+            buildToolsVersion: '25.0.3',
+            applicationId    : "cn.com.zgfei.modelapp",
+            minSdkVersion    : 15,
+            targetSdkVersion : 25,
+            versionCode      : 100,
+            versionName      : "1.0.0"
+    ]
+
+    def dependVersion = [
+            support: "25.1.0"
+    ]
+
+    dependencies = [
+            //base
+            "appcompat-v7"   : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "cardview-v7"    : "com.android.support:cardview-v7:${dependVersion.support}",
+            "recyclerview-v7": "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "design"         : "com.android.support:design:${dependVersion.support}",
+
+            //rx
+            "rxjava"         : "io.reactivex.rxjava2:rxjava:2.0.7",
+            "rxandroid"      : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxpermissions"  : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar",
+
+    ]
+}
